@@ -1,9 +1,9 @@
 n=int(input())
 for i in range(1,n+1):
     for j in range(1,n+1):
-        if i==j or i==n+1-j:
+        if i==j:
             j=''
-            print('x',end='')
+            print(j,end='0')
         else:
-            print('0',end='')
+            print('x',end='')
     print()
