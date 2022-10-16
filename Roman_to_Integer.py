@@ -1,27 +1,28 @@
-def val(re):
-    if(re=='I'):
+def value(r):
+    if (r=='I'):
         return 1
-    if(re=='V'):
+    if (r=='V'):
         return 5
-    if(re=='X'):
+    if (r=='X'):
         return 10
-    if(re=='L'):
+    if (r=='L'):
         return 50
-    if(re=='C'):
+    if (r=='C'):
         return 100
-    if(re=='D'):
+    if (r=='D'):
         return 500
-    if(re=='M'):
+    if (r=='M'):
         return 1000
     return -1
+ 
 def roman(str):
     res=0
     i=0
     while(i<len(str)):
-        s1=val(str[i])
-        if(i+1<len(str)):
-            s2=val(str[i+1])
-            if(s1>=s2):
+        s1=value(str[i])
+        if (i+1<len(str)):
+            s2=value(str[i+1])
+            if (s1>=s2):
                 res=res+s1
                 i=i+1
             else:
